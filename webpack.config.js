@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const docsLoader = require('./src/blocks/docs-loader');
 module.exports = {
     mode: 'development',
     devtool: 'source-map',
@@ -14,11 +13,6 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
-                options: {
-                    loaders:{
-                        'docs':docsLoader
-                    }
-                }
             },
             {
                 test: /\.css$/,
@@ -34,10 +28,6 @@ module.exports = {
                     }
                 }
             },
-            {
-                resourceQuery: /blockType=docs/,
-                loader: require.resolve('./src/blocks/docs-loader.js')
-            }
         ]
     },
     resolve: {
