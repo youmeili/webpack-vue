@@ -4,9 +4,7 @@
             <p :class="{a: isRed}">This is Home page</p>
             <Doc />
             <p>{{docs}}</p>
-            <ul>
-                <li v-for="list in lists">{{list.familyName}}</li>
-            </ul>
+            <p>{{name}}</p>
             <!--<img src="../../assets/images/ban_img1.jpg"/>-->
             <router-view></router-view>
         </div>
@@ -23,7 +21,7 @@
             return {
                 isRed: true,
                 docs: Doc.__docs,
-                lists: []
+                name: ""
             }
         },
         components: {
@@ -33,15 +31,10 @@
             next();
         },
         created: function(){
-            const url = '/anchorWithSalary/list';
-            const params = {
-                currentPage: 1,
-                pageSize: 20,
-                month: "2018-10"
-            };
-            http.post(url , params).then(res => {
+            const url = '/proxy';
+            http.get(url).then(res => {
                 console.log('res', res);
-                this.lists = res.list;
+                this.name = res.absolutePath;
             }).catch(error => {
                 console.log('error', error);
             });

@@ -51,7 +51,7 @@ module.exports = {
         port: 8081,
         proxy:{
             '/api': {
-                target: "http://47.100.29.47:8580/",
+                target: " https://www.easy-mock.com/mock/5bdff2bde4de0a208bdfa7d5/example",
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
