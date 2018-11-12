@@ -9,11 +9,16 @@
     "server": "webpack-dev-server --open --port 8081"
   },
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
     "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
     "style-loader": "^0.23.1",
+    "vant": "^1.4.3",
     "vue": "^2.5.17",
     "vue-loader": "^15.4.2",
     "vue-router": "^3.0.1",
@@ -25,6 +30,11 @@
   },
   "dependencies": {
     "html-webpack-plugin": "^3.2.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "repository": {
     "type": "git",

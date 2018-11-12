@@ -1,4 +1,5 @@
 import Vue from "vue";
+import 'vant/lib/index.css';
 import VueRouter from "vue-router";
 import App from "./App";
 import "./assets/styles/style.css";
@@ -7,7 +8,7 @@ import Foo from "./pages/home/Foo";
 import Bar from "./pages/home/Bar";
 import About from "./pages/about/About";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const router = new VueRouter({
     // mode: 'history',
@@ -20,8 +21,6 @@ const router = new VueRouter({
                 {path: "bar", component: Bar}
             ],
             beforeEnter: (to, from, next)=>{
-                console.log("to", to);
-                console.log("from", from);
                 next();
             }
         },

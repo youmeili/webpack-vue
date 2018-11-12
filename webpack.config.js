@@ -1,5 +1,7 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const pxtorem = require('postcss-pxtorem');
 const docsLoader = require('./src/blocks/docs-loader');
 module.exports = {
     mode: 'development',
@@ -22,7 +24,30 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader', options: {
+                            plugins: [
+                                pxtorem({
+                                    rootValue: 50,
+                                    propList: ['*']
+                                }),
+                            ],
+                        },
+                    }
+                ],
+                include: [ path.resolve(__dirname, "node_modules/vant")]
+            },
+            {
+                test: /\.css$/,
+                include: [path.resolve(__dirname, "src")],
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ]
 
             },
             {
