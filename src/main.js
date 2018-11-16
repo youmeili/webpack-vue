@@ -1,5 +1,6 @@
 import Vue from "vue";
 import 'vant/lib/index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import VueRouter from "vue-router";
 import App from "./App";
 import "./assets/styles/style.css";

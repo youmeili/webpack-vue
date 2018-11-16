@@ -1,11 +1,30 @@
 <template>
     <div>
-        <div>
-            <router-link to="/home">Home</router-link>
-            <router-link to="/home/foo">foo</router-link>
-            <router-link to="/home/bar">bar</router-link>
-            <router-link to="/about/123?usrId=111111111">About</router-link>
-        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-9">
+                        <div class="loge_area">
+                            <img src="./assets/images/core-img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-xs-12">
+                        <nav class="main_menu_area">
+                            <ul>
+                                <li><router-link to="/home">HOME</router-link></li>
+                                <li><router-link to="/about">ABOUT</router-link></li>
+                                <li><router-link to="/service">SERVICE</router-link></li>
+                                <li><router-link to="/advisor">ADVISOR</router-link></li>
+                                <li><router-link to="/work">WORK</router-link></li>
+                                <li><router-link to="/price">PRICE</router-link></li>
+                                <li><router-link to="/blog">BLOG</router-link></li>
+                                <li><router-link to="/contact">CONTACT</router-link></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
         <transition :name="transitionName">
             <router-view></router-view>
         </transition>

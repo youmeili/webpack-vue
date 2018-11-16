@@ -2,15 +2,6 @@
     <!--<transition name="about">-->
         <div>
             <p>This is About page</p>
-            <!--<div>-->
-                <!--<van-dialog-->
-                        <!--v-model="show"-->
-                        <!--show-cancel-button-->
-                        <!--:before-close="beforeClose"-->
-                <!--&gt;-->
-                   <!--这是一个弹框-->
-                <!--</van-dialog>-->
-            <!--</div>-->
         </div>
     <!--</transition>-->
 </template>
