@@ -158,7 +158,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
             <section class="fun_fact_area section_padding_100_70">
                 <div class="container">
@@ -206,26 +205,92 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
-                            <div>
-                                <!--<img src="../../assets/images/">-->
+                            <div class="our_speciality_area_video">
+                                <div class="our_speciality_area_video_content">
+                                    <i class="icofont icofont-ui-video-play color_3f51bf"></i>
+                                </div>
+                                <div class="cover"></div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-8">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
-                                    <p>Our Best Values</p>
-                                    <h3>Core Features</h3>
+                                    <div class="our_speciality_area_header">
+                                        <p>Our Best Values</p>
+                                        <h3 class="color_3f51bf">Core Features</h3>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6">
-                                    <div>
-                                        <i ></i>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_3f51bf">
+                                                <i class="icofont icofont-runner"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_3f51bf">Super Fast</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_2196F3">
+                                                <i class="icofont icofont-code"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_2196F3">Valid HTML5 / CSS3</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_3f51bf">
+                                                <i class="icofont icofont-ui-touch-phone"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_3f51bf">Cross Browser Compatibility</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6">
-                                    <p>Our Best Values</p>
-                                    <h3>Core Features</h3>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_FF9800">
+                                                <i class="icofont icofont-business-man"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_FF9800">Friendly Support</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_E91E63">
+                                                <i class="icofont icofont-light-bulb"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_E91E63">Awesome Unique Design</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="our_speciality_area_icon">
+                                            <div class="color_FF9800">
+                                                <i class="icofont icofont-pixels"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our_speciality_area_text">
+                                            <h5 class="color_FF9800">Pixel perfect design</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate sed deleniti soluta, architecto id.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -444,5 +509,70 @@
     .fun_fact_area .fun_fact_area_content h3{
         display: inline-block;
         font-size: 24px;
+    }
+    .our_speciality_area_header p{
+        margin-bottom: 10px;
+    }
+    .our_speciality_area_header{
+        margin-bottom: 30px;
+    }
+    .our_speciality_area_icon{
+        display: inline-block;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+    }
+    .our_speciality_area_icon div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our_speciality_area_text{
+        display: inline-block;
+        padding-left: 65px;
+    }
+    .our_speciality_area_text h5, .our_speciality_area_text p{
+        font-size: 14px;
+    }
+    .item{
+        position: relative;
+    }
+    .our_speciality_area{
+        background-color: #f6f6f6;
+    }
+    .our_speciality_area_video{
+        width: 100%;
+        height: 100%;
+        background-image: url("../../assets/images/bg-pattern/video.jpg");
+        background-size: cover;
+    }
+    .our_speciality_area_video_content{
+        font-size: 20px;
+        /*text-align: center;*/
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border-radius: 50%;
+        border: 5px solid #3f51bf;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -45px;
+        margin-left: -15px;
+    }
+    .cover{
+        height: 100%;
+        width: 100%;
+        border: 15px solid #3f51bf;
+        position: relative;
+        left: 15px;
+        top: -15px;
     }
 </style>

@@ -15,15 +15,17 @@ const router = new VueRouter({
     // mode: 'history',
     routes: [
         {
-            path: "/home",
+            // path: "/home",
+            // component:Home,
+            // children: [
+            //     {path: "foo", component: Foo},
+            //     {path: "bar", component: Bar}
+            // ],
+            // beforeEnter: (to, from, next)=>{
+            //     next();
+            // }
+            path: "/",
             component:Home,
-            children: [
-                {path: "foo", component: Foo},
-                {path: "bar", component: Bar}
-            ],
-            beforeEnter: (to, from, next)=>{
-                next();
-            }
         },
         {
             path: "/about/:id",
