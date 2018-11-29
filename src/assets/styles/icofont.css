@@ -83,7 +83,21 @@
 .icofont-ui-video-play:before {
     content: "\ed70";
 }
-
+.icofont-social-facebook:before {
+    content: "\ee08";
+}
+.icofont-social-google-plus:before {
+    content: "\ee11";
+}
+.icofont-social-pinterest:before {
+    content: "\ee23";
+}
+.icofont-social-skype:before {
+    content: "\ee2b";
+}
+.icofont-social-twitter:before {
+    content: "\ee34";
+}
 
 
 

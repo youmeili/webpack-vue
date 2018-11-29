@@ -10,7 +10,8 @@ module.exports = {
     entry: __dirname + "/src/main.js",
     output: {
         path: __dirname + "/dist",
-        filename: "bundle.js"
+        filename: "[name].[hash:8].js",
+        chunkFilename: "[name].chunk.[hash:8].js"
     },
     module: {
         rules: [
@@ -70,8 +71,9 @@ module.exports = {
             {
                 test: /\.(png|gif|jpg|svg|jpeg)$/i,
                 use:{
-                    loader: "file-loader", //url-loader
+                    loader: "url-loader", //url-loader
                     options:{
+                        limit: 102400,
                         name: 'images/[hash].[ext]',
                     }
                 }
@@ -125,10 +127,13 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
-        })
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: './index.html'
-        // }), //这个是打包生成index.html
+        }),
+        new webpack.HashedModuleIdsPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.html',
+            // hash: true,
+            inject: true
+        }) //这个是打包生成index.html
     ]
 }

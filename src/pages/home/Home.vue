@@ -297,6 +297,132 @@
                     </div>
                 </div>
             </section>
+            <section class="our_advisor_area section_padding_100_70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="our_advisor_area_header">
+                                <p>Our Quality Team</p>
+                                <h3 class="color_3f51bf">Creative Advisor</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_advisor_area_item">
+                                <div class="our_speciality_area_img">
+                                    <img src="../../assets/images/advisor-img/advisor-1.png"/>
+                                </div>
+                                <h2 class="color_3f51bf">NAZRUL ISLAM</h2>
+                                <p>Financial Advisor</p>
+                                <div class="our_advisor_area_icon">
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-facebook"></i>
+                                    </a>
+                                    <a class="background_color_FF9800 btn btn-default">
+                                        <i class="icofont icofont-social-google-plus"></i>
+                                    </a>
+                                    <a class="background_color_2196F3 btn btn-default">
+                                        <i class="icofont icofont-social-pinterest"></i>
+                                    </a>
+                                    <a class="background_color_E91E63 btn btn-default">
+                                        <i class="icofont icofont-social-skype"></i>
+                                    </a>
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_advisor_area_item">
+                                <div class="our_speciality_area_img">
+                                    <img src="../../assets/images/advisor-img/advisor-2.png"/>
+                                </div>
+                                <h2 class="color_FF9800">TORONGGO TULI</h2>
+                                <p>Financial Advisor</p>
+                                <div class="our_advisor_area_icon">
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-facebook"></i>
+                                    </a>
+                                    <a class="background_color_FF9800 btn btn-default">
+                                        <i class="icofont icofont-social-google-plus"></i>
+                                    </a>
+                                    <a class="background_color_2196F3 btn btn-default">
+                                        <i class="icofont icofont-social-pinterest"></i>
+                                    </a>
+                                    <a class="background_color_E91E63 btn btn-default">
+                                        <i class="icofont icofont-social-skype"></i>
+                                    </a>
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_advisor_area_item">
+                                <div class="our_speciality_area_img">
+                                    <img src="../../assets/images/advisor-img/advisor-3.png"/>
+                                </div>
+                                <h2 class="color_2196F3">SAMANTHA SAHAR</h2>
+                                <p>Financial Advisor</p>
+                                <div class="our_advisor_area_icon">
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-facebook"></i>
+                                    </a>
+                                    <a class="background_color_FF9800 btn btn-default">
+                                        <i class="icofont icofont-social-google-plus"></i>
+                                    </a>
+                                    <a class="background_color_2196F3 btn btn-default">
+                                        <i class="icofont icofont-social-pinterest"></i>
+                                    </a>
+                                    <a class="background_color_E91E63 btn btn-default">
+                                        <i class="icofont icofont-social-skype"></i>
+                                    </a>
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="our_advisor_area_item">
+                                <div class="our_speciality_area_img">
+                                    <img src="../../assets/images/advisor-img/advisor-4.png"/>
+                                </div>
+                                <h2 class="color_E91E63">RIYADH KHAN</h2>
+                                <p>Financial Advisor</p>
+                                <div class="our_advisor_area_icon">
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-facebook"></i>
+                                    </a>
+                                    <a class="background_color_FF9800 btn btn-default">
+                                        <i class="icofont icofont-social-google-plus"></i>
+                                    </a>
+                                    <a class="background_color_2196F3 btn btn-default">
+                                        <i class="icofont icofont-social-pinterest"></i>
+                                    </a>
+                                    <a class="background_color_E91E63 btn btn-default">
+                                        <i class="icofont icofont-social-skype"></i>
+                                    </a>
+                                    <a class="background_color_3f51bf btn btn-default">
+                                        <i class="icofont icofont-social-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="aaa">
+                <ul>
+                    <li class="one"></li>
+                    <li class="two"></li>
+                    <li class="three"></li>
+                    <li class="four"></li>
+                </ul>
+            </section>
         </div>
     <!--</transition>-->
 </template>
@@ -332,14 +458,14 @@
                     $(this).trigger('resizeEnd');
                 }, 30);
             }).trigger("resize");
-            // const url = '/proxy';
+            const url = '/proxy';
             // console.log('hello');
-            // http.get(url).then(res => {
-            //     console.log('res', res);
-            //     this.name = res.absolutePath;
-            // }).catch(error => {
-            //     console.log('error', error);
-            // });
+            http.get(url).then(res => {
+                console.log('res', res);
+                this.name = res.absolutePath;
+            }).catch(error => {
+                console.log('error', error);
+            });
         }
     }
 </script>
@@ -575,4 +701,58 @@
         left: 15px;
         top: -15px;
     }
+    .our_advisor_area_item{
+        padding: 0 10px;
+        background-color: #f6f6f6;
+        text-align: center;
+    }
+    .our_advisor_area_item h2{
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .our_advisor_area_item p{
+        margin-bottom: 0;
+    }
+    .our_advisor_area_icon{
+        padding: 6px 0 18px;
+    }
+    .our_advisor_area_header{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .our_advisor_area_icon a{
+        display: inline-block;
+        padding: 1px 7px;
+        color: #fff;
+        font-size: 14px;
+        border: medium;
+    }
+    .aaa{
+        padding: 20px;
+    }
+    .aaa ul{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        /*padding: 20px;*/
+
+    }
+    .aaa li {
+        margin: 0 20px;
+        background-color: pink;
+    }
+    .aaa ul li:nth-child(1) {
+        flex: 1;
+    }
+    .two {
+        flex: 1;
+    }
+    .three {
+        flex: 1;
+    }
+    .aaa ul li:last-child{
+        flex: 2;
+    }
+
 </style>

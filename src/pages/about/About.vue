@@ -2,16 +2,19 @@
     <!--<transition name="about">-->
         <div>
             <p>This is About page</p>
+            <ShoppingCart />
         </div>
     <!--</transition>-->
 </template>
 
 <script>
     import {Button, Cell, Dialog} from "vant"
+    import ShoppingCart from '../../components/ShoppingCart'
     export default {
         name: "About",
         components: {
-            Dialog
+            Dialog,
+            ShoppingCart
         },
         data() {
             return {
@@ -25,12 +28,12 @@
             console.log(this.$route);
         },
         mounted() {
-            Dialog.alert({
-              title: '标题',
-              message: '弹窗内容'
-            }).then(() => {
-              // on close
-            });
+            // Dialog.alert({
+            //   title: '标题',
+            //   message: '弹窗内容'
+            // }).then(() => {
+            //   // on close
+            // });
         },
         methods: {
             beforeClose(action, done) {
